@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Axel — Informatics student. Portfolio: AI, fuzzy logic, and an interest in IoT and smart devices." />
+  <title>Axel — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="desktop">
+    <div class="hill" aria-hidden="true"></div>
+
+    <!-- desktop icons -->
+    <div class="desktop-icons" aria-hidden="true">
+      <a class="dicon" href="#win-about"><span class="dicon-img">🗎</span><span>about.txt</span></a>
+      <a class="dicon" href="#win-skills"><span class="dicon-img">📊</span><span>skills.exe</span></a>
+      <a class="dicon" href="#win-projects"><span class="dicon-img">📁</span><span>My Projects</span></a>
+      <a class="dicon" href="#win-contact"><span class="dicon-img">📮</span><span>Contact</span></a>
+    </div>
+
+    <main class="windows-grid container">
+
+      <!-- ================= ABOUT ================= -->
+      <section class="window" id="win-about">
+        <div class="titlebar">
+          <span class="titlebar-text"><span class="tb-icon">🗎</span> About Me — Notepad</span>
+          <span class="titlebar-buttons">
+            <button class="tb-btn" data-min="win-about" aria-label="Minimize">_</button>
+            <button class="tb-btn" aria-label="Maximize" title="It's already nice like this">□</button>
+            <button class="tb-btn" data-min="win-about" aria-label="Close">×</button>
+          </span>
+        </div>
+        <div class="menubar"><span>File</span><span>Edit</span><span>Format</span><span>View</span><span>Help</span></div>
+        <div class="window-body notepad">
+          <p>Hi! I'm <strong>Axel</strong>, an Informatics student.</p>
+          <p>Most of what I've done so far lives in software: I've built AI models from scratch in Python — including a complete fuzzy logic inference system — worked with datasets using Pandas and NumPy, and made a few web and desktop apps along the way.</p>
+          <p>Lately I've been more and more curious about the <strong>IoT</strong> side of things — where software meets real sensors and hardware, and where the usual "just add more compute" answers stop working. It combines the AI topics I already enjoy with a completely new set of constraints I haven't worked with yet.</p>
+          <p>That's exactly why I'm applying to the <strong>AI for IoT stream</strong> at the IoT Research Group: it's the part of the field I know the least about, and the part I most want to learn properly — from people who actually build smart devices for a living.</p>
+          <p>— Axel</p>
+        </div>
+        <div class="statusbar monoinfo">Ln 1, Col 1 &nbsp;·&nbsp; UTF-8 &nbsp;·&nbsp; saved ✅</div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="window" id="win-skills">
+        <div class="titlebar">
+          <span class="titlebar-text"><span class="tb-icon">📊</span> Skills — Task Manager</span>
+          <span class="titlebar-buttons">
+            <button class="tb-btn" data-min="win-skills" aria-label="Minimize">_</button>
+            <button class="tb-btn" aria-label="Maximize" title="It's already nice like this">□</button>
+            <button class="tb-btn" data-min="win-skills" aria-label="Close">×</button>
+          </span>
+        </div>
+        <div class="window-body skills">
+          <h3 class="group-label">Languages</h3>
+          <div class="skill"><span>Python</span><div class="bar"><div class="bar-fill" style="--w: 80%"></div></div></div>
+          <div class="skill"><span>C++</span><div class="bar"><div class="bar-fill" style="--w: 65%"></div></div></div>
+          <div class="skill"><span>Java</span><div class="bar"><div class="bar-fill" style="--w: 60%"></div></div></div>
+
+          <h3 class="group-label">Data &amp; AI</h3>
+          <div class="skill"><span>Fuzzy logic inference (from scratch)</span><div class="bar"><div class="bar-fill" style="--w: 75%"></div></div></div>
+          <div class="skill"><span>Pandas / NumPy</span><div class="bar"><div class="bar-fill" style="--w: 70%"></div></div></div>
+
+          <h3 class="group-label">Fundamentals</h3>
+          <div class="skill"><span>Data structures &amp; algorithms</span><div class="bar"><div class="bar-fill" style="--w: 70%"></div></div></div>
+          <div class="skill"><span>UI/UX design</span><div class="bar"><div class="bar-fill" style="--w: 60%"></div></div></div>
+          <div class="skill"><span>Web development</span><div class="bar"><div class="bar-fill" style="--w: 55%"></div></div></div>
+
+          <h3 class="group-label">What I want to learn in the lab ⭳</h3>
+          <div class="skill"><span>IoT systems &amp; smart devices</span><div class="bar bar-progress"><div class="bar-fill" style="--w: 5%"></div></div><em>just starting</em></div>
+          <div class="skill"><span>Running AI on real hardware</span><div class="bar bar-progress"><div class="bar-fill" style="--w: 3%"></div></div><em>goal</em></div>
+
+          <p class="skills-note">The percentages are honest self-assessments — except the last group, which isn't a skill yet. It's what I want to learn from the lab, and it's the reason I'm applying.</p>
+        </div>
+        <div class="statusbar monoinfo">Processes: 4 &nbsp;·&nbsp; CPU Usage: 6% &nbsp;·&nbsp; CPU: tomorrow</div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="window window-wide" id="win-projects">
+        <div class="titlebar">
+          <span class="titlebar-text"><span class="tb-icon">📁</span> My Projects</span>
+          <span class="titlebar-buttons">
+            <button class="tb-btn" data-min="win-projects" aria-label="Minimize">_</button>
+            <button class="tb-btn" aria-label="Maximize" title="It's already nice like this">□</button>
+            <button class="tb-btn" data-min="win-projects" aria-label="Close">×</button>
+          </span>
+        </div>
+        <div class="addressbar"><span class="addr-icon">📁</span><span class="addr">C:\Users\Axel\Projects</span></div>
+        <div class="window-body filelist">
+          <div class="file-row">
+            <span class="file-icon">🎬</span>
+            <div class="file-main">
+              <a class="file-name" href="https://github.com/yogafari793-maker/Tugas-Besar-IF4806-MoviX-Kelompok_7" target="_blank" rel="noopener">MoviX — cinema ticket reservation app</a>
+              <p class="file-desc">
+                A group project for IF4806: a digital cinema ticket booking system, built in Java to
+                replace clunky manual ticket management. I contributed a lot to this one across the
+                project — long stretch of work that taught me plenty about turning half-formed ideas
+                into an actual working app with other people.
+              </p>
+            </div>
+            <a class="file-action" href="https://github.com/yogafari793-maker/Tugas-Besar-IF4806-MoviX-Kelompok_7" target="_blank" rel="noopener">source »</a>
+          </div>
+
+          <div class="file-row">
+            <span class="file-icon">🧠</span>
+            <div class="file-main">
+              <a class="file-name" href="https://github.com/Duddledudeduck/fuzzy-logic-movie-rating" target="_blank" rel="noopener">fuzzy-logic-movie-rating</a>
+              <p class="file-desc">
+                A full fuzzy logic system that rates movies, written in Python — membership functions,
+                rule evaluation, and defuzzification all built by hand, no ML libraries. Fuzzy logic
+                also happens to be one of the classic ways smart devices make decisions on limited
+                hardware, so this felt like a good place to start thinking about edge AI.
+              </p>
+            </div>
+            <a class="file-action" href="https://github.com/Duddledudeduck/fuzzy-logic-movie-rating" target="_blank" rel="noopener">source »</a>
+          </div>
+
+          <div class="file-row">
+            <span class="file-icon">📉</span>
+            <div class="file-main">
+              <a class="file-name" href="https://github.com/Duddledudeduck/Magnus_vir-Pengurutan_rating_film_IMDb_Bubble_Sort_-Iteratif-_dan_Quick_Sort_-Rekursif-" target="_blank" rel="noopener">imdb-rating-sort (bubble vs quick)</a>
+              <p class="file-desc">
+                Comparing Bubble Sort and Quick Sort on real IMDb rating data. On the surface it's a
+                sorting exercise; the interesting part is why O(n²) vs O(n log n) actually matters
+                when compute is cheap — and why it matters <em>a lot</em> when it isn't, like on a
+                microcontroller.
+              </p>
+            </div>
+            <a class="file-action" href="https://github.com/Duddledudeduck/Magnus_vir-Pengurutan_rating_film_IMDb_Bubble_Sort_-Iteratif-_dan_Quick_Sort_-Rekursif-" target="_blank" rel="noopener">source »</a>
+          </div>
+
+          <div class="file-row">
+            <span class="file-icon">🖥️</span>
+            <div class="file-main">
+              <span class="file-name is-placeholder">Web app project — add yours here</span>
+              <p class="file-desc">
+                Placeholder slot: edit <code>index.html</code> and replace this row with your web
+                application, a short description, and a link.
+              </p>
+            </div>
+            <a class="file-action is-placeholder" href="https://github.com/Duddledudeduck" target="_blank" rel="noopener">GitHub »</a>
+          </div>
+        </div>
+        <div class="statusbar monoinfo">4 object(s) &nbsp;·&nbsp; 3 finished projects, 1 placeholder</div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="window" id="win-contact">
+        <div class="titlebar">
+          <span class="titlebar-text"><span class="tb-icon">📮</span> Contact — MSN Messenger</span>
+          <span class="titlebar-buttons">
+            <button class="tb-btn" data-min="win-contact" aria-label="Minimize">_</button>
+            <button class="tb-btn" aria-label="Maximize" title="It's already nice like this">□</button>
+            <button class="tb-btn" data-min="win-contact" aria-label="Close">×</button>
+          </span>
+        </div>
+        <div class="window-body contact">
+          <div class="contact-avatar-row">
+            <div class="contact-avatar">🦆</div>
+            <div>
+              <strong>Axel</strong>
+              <p class="contact-status">🟢 Online — open to a chat about AI, IoT, or anything in between.</p>
+            </div>
+          </div>
+          <div class="contact-buttons">
+            <a class="xp-btn" href="https://github.com/Duddledudeduck" target="_blank" rel="noopener">
+              <span class="xp-btn-ico">🐙</span> GitHub
+            </a>
+            <button class="xp-btn" id="emailBtn" data-email="you@your-domain.com">
+              <span class="xp-btn-ico">✉️</span> <span id="emailLabel">Email (add yours)</span>
+            </button>
+          </div>
+          <p class="contact-note">Click "Email" to copy the address once you've added it.</p>
+        </div>
+        <div class="statusbar monoinfo">Status: Available &nbsp;·&nbsp; Replies within a day or two</div>
+      </section>
+
+    </main>
+
+    <!-- desktop icon note -->
+    <p class="desktop-hint">Double-click a window's minimize button to hide it — click the taskbar tab to bring it back.</p>
+  </div>
+
+  <!-- ================= START MENU ================= -->
+  <div class="start-menu" id="startMenu" hidden>
+    <div class="start-menu-header">
+      <div class="start-avatar">🦆</div>
+      <strong>Axel</strong>
+    </div>
+    <div class="start-menu-items">
+      <a class="start-item" href="#win-about">🗎 About Me</a>
+      <a class="start-item" href="#win-skills">📊 Skills</a>
+      <a class="start-item" href="#win-projects">📁 My Projects</a>
+      <a class="start-item" href="#win-contact">📮 Contact</a>
+      <div class="start-sep"></div>
+      <a class="start-item start-item-danger" id="turnOff">🔴 Turn Off Computer</a>
+    </div>
+    <div class="start-menu-footer">Windows XP Professional · Portfolio Edition</div>
+  </div>
+
+  <!-- ================= TASKBAR ================= -->
+  <div class="taskbar">
+    <button class="start-btn" id="startBtn">start</button>
+    <span class="quick-launch">🗂 💻 🌐</span>
+    <a class="task-tab" href="#win-about" data-task="win-about">About — Notepad</a>
+    <a class="task-tab" href="#win-skills" data-task="win-skills">Skills — Task Mgr</a>
+    <a class="task-tab" href="#win-projects" data-task="win-projects">My Projects</a>
+    <a class="task-tab" href="#win-contact" data-task="win-contact">Contact</a>
+    <span class="tray"><span class="tray-ico">🔊</span><span id="clock">--:--</span></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

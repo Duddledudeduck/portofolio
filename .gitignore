@@ -1,0 +1,7 @@
+# not part of the portfolio site — this is a local clone of another repo
+fuzzy-logic-movie-rating/
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.vscode/
