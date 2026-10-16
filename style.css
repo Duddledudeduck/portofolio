@@ -37,38 +37,14 @@ code {
   border-radius: 2px;
 }
 
-/* ============ DESKTOP (Bliss wallpaper) ============ */
+/* ============ DESKTOP (sunflower wallpaper) ============ */
 .desktop {
   min-height: 100vh;
   position: relative;
   padding: 90px 24px 110px;
   overflow: hidden;
-  background: linear-gradient(180deg,
-    #0c3373 0%, #17529b 22%, #3a7fc9 45%, #7db3e2 62%, #aac9ec 78%, #cfe2f4 100%);
-}
-
-/* the green hill of bliss */
-.hill {
-  position: absolute;
-  left: -30%;
-  right: -30%;
-  bottom: -16%;
-  height: 75%;
-  background: radial-gradient(ellipse at 50% 0%,
-    #b3d96e 0%, #93c74f 32%, #5f9f2f 58%, #36731b 82%, #2a6115 100%);
-  border-radius: 50% 50% 0 0;
-  box-shadow: inset 0 40px 80px rgba(255, 255, 255, 0.25);
-  pointer-events: none;
-}
-
-/* soft "sun" glow */
-.desktop::after {
-  content: "";
-  position: absolute;
-  top: -120px; right: -80px;
-  width: 420px; height: 420px;
-  background: radial-gradient(circle, rgba(255,255,220,.5), transparent 70%);
-  pointer-events: none;
+  /* fallback color while the wallpaper loads */
+  background: #9abbe0 url("assets/wallpaper.jpg") center / cover no-repeat;
 }
 
 /* ============ DESKTOP ICONS ============ */
@@ -76,7 +52,7 @@ code {
   position: absolute;
   top: 76px; left: 16px;
   display: flex; flex-direction: column; gap: 18px;
-  z-index: 5;
+  z-index: 1;
 }
 .dicon {
   width: 84px;
@@ -94,10 +70,16 @@ code {
   position: relative;
   z-index: 2;
   max-width: 1180px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 26px;
   align-items: start;
+  padding: 0 24px;
+}
+/* keep the desktop icon rail clear — grid shifts right except on very wide screens */
+@media (max-width: 1399px) and (min-width: 901px) {
+  .windows-grid { padding-left: 128px; }
 }
 .window-wide { grid-column: 1 / -1; }
 @media (min-width: 1024px) {
@@ -251,6 +233,16 @@ code {
   border: 1px solid #e6d9a0;
   border-radius: 3px;
   padding: 8px 10px;
+}
+
+/* small photo window, pinned to the left of the page */
+.window-photo { max-width: 300px; justify-self: start; }
+.photo-body { padding: 10px; background: #fff; }
+.photo-body img {
+  width: 100%;
+  display: block;
+  border: 1px solid #7f7f6f;
+  box-shadow: inset 0 0 0 1px #fdfdfd;
 }
 
 /* ============ PROJECTS (explorer list) ============ */

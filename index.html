@@ -10,7 +10,7 @@
 <body>
 
   <div class="desktop">
-    <div class="hill" aria-hidden="true"></div>
+<!-- (wallpaper is now a real image — no CSS hill needed) -->
 
     <!-- desktop icons -->
     <div class="desktop-icons" aria-hidden="true">
@@ -21,6 +21,22 @@
     </div>
 
     <main class="windows-grid container">
+
+      <!-- ================= PICTURE VIEWER ================= -->
+      <section class="window window-photo" id="win-fish">
+        <div class="titlebar">
+          <span class="titlebar-text"><span class="tb-icon">🐟</span> fish.jpg — Picture and Fax Viewer</span>
+          <span class="titlebar-buttons">
+            <button class="tb-btn" data-min="win-fish" aria-label="Minimize">_</button>
+            <button class="tb-btn" data-min="win-fish" aria-label="Close">×</button>
+          </span>
+        </div>
+        <div class="menubar"><span>File</span><span>Edit</span><span>View</span></div>
+        <div class="window-body photo-body">
+          <img src="assets/fish.jpg" alt="Cartoon character in an aquarium, saying: I enjoy watching the fish, watching the fish is fun to do." />
+        </div>
+        <div class="statusbar monoinfo">fish.jpg &nbsp;·&nbsp; Fit to page &nbsp;·&nbsp; 🐠 watching is fun</div>
+      </section>
 
       <!-- ================= ABOUT ================= -->
       <section class="window" id="win-about">
